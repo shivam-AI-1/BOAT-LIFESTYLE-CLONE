@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Summer Sale 2024</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="./assets/boAt_logo_small_3067da8c-a83b-46dd-b28b-6ef1e16ccd17_small.png" alt="boAt Logo"
+                height="50px">
+        </div>
+
+        <nav class="navigation">
+            <span>Categories v </span>
+            <span>boAt Personalisation</span>
+            <span>Corporate Orders</span>
+            <span>More v</span>
+        </nav>
+    </header>
+
+    <div class="navbar">
+        <div class="search-bar">
+            <span class="icon search-icon">&#128269;</span>
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="icons">
+            <span class="icon user-icon"><img src="./assets/Screenshot 2024-10-29 144332.png" alt=""
+                    height="30px"></span>
+            <span class="icon bag-icon"><img src="./assets/Screenshot 2024-10-29 144327.png" alt=""
+                    height="30px"></span>
+        </div>
+    </div>
+
+    <div class="carousel">
+        <div class="carousel-track-container">
+            <ul class="carousel-track">
+                <li class="carousel-slide"><img
+                        src="./assets/Desktop_Festive_feb77ce2-b9d8-4757-818d-a2828c695916_1400x.png" alt=""></li>
+                <li class="carousel-slide"><img src="./assets/Desktop_Festive_PZN_1400x.png" alt=""></li>
+                <li class="carousel-slide"><img
+                        src="./assets/Desktop_Festive_audio_054927c8-24c1-4e84-adaa-553c19725191_1400x.png" alt=""></li>
+                <li class="carousel-slide"><img
+                        src="./assets/Desktop_Festive_soundbar_abbd5166-8fac-4a19-a2d0-07d414023204_1400x.png" alt="">
+                </li>
+                <li class="carousel-slide"><img
+                        src="./assets/Desktop_Festive_werable_515caca0-00cf-44b0-865f-3680d6ca1934_1400x.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const track = document.querySelector('.carousel-track');
+        const slides = Array.from(track.children);
+        let currentIndex = 0;
+
+        function updateSlidePosition() {
+            track.style.transform = 'translateX(-' + currentIndex * 100 + 'vw)';
+        }
+
+        // Auto-slide every 3 seconds
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateSlidePosition();
+        }, 3000);
+    </script>
+
+
+    <section class="deals-section">
+        <h2>Best <span>Festive Deals</span></h2>
+        <nav class="tabs">
+            <button class="tab active">All Deals</button>
+            <button class="tab">True Wireless Earbuds</button>
+            <button class="tab">Smartwatches</button>
+            <button class="tab">Speakers</button>
+            <button class="tab">Earphones</button>
+        </nav>
+        <a href="#" class="view-all">View All</a>
+
+        <div class="deals-carousel">
+            <div class="card">
+                <div class="badge">Engraving Available</div>
+                <img src="./assets/AD_161 (1).png" alt="boAt Airdopes 161" height="10px">
+                <div class="product-info">
+                    <div class="tag">40 Hours Playback</div>
+                    <h3>boAt Airdopes 161</h3>
+                    <p>₹899 <span class="original-price">₹2,490</span> <span class="discount">64% off</span></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="badge">Recently Restocked</div>
+                <img src="./assets/9_4b92e0f4-6068-447a-8c45-742aa160a211.png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">40 Hours Playback</div>
+                    <h3>boAt Airdopes 131 Pro Buds</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">New Launch</div>
+                <img src="./assets/Airdop800_Black.png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">40 Hours Playback</div>
+                    <h3>boAt Airdopes 800</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">Recently Restocked</div>
+                <img src="./assets/Wave-Genesis-Pro.png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">40 Hours Playback</div>
+                    <h3>boAt Wave Genesis Pro</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">Engraving Available</div>
+                <img src="./assets/PB400_628ae039-11be-4f0b-b723-651e2bb05de7.png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">40 Hours Playback</div>
+                    <h3>boAt Energyshroom PB400</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">Recently Restocked</div>
+                <img src="./assets/Stone_350.png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">40 Hours Playback</div>
+                    <h3>boAt Stone 350</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+
+            
+        </div>
+
+        
+    </section>
+
+
+
+    
+
+
+    <div class="abc">
+        <img src="./assets/Strip_Desktop1-1_1400x (1).png" alt="" height="150px" width="1250px" >
+    </div>
+
+
+    <section class="deals-section">
+        <h2>Choose<span> Your Offers</span></h2>
+        <nav class="tabs">
+            <button class="tab active">Extra ₹500 off</button>
+            <button class="tab">Extra ₹400 Off- Using Festive400</button>
+            <button class="tab">Extra ₹300 Off- Using Festive300</button>
+            <button class="tab">Extra ₹100 Off</button>
+           
+        </nav>
+        <a href="#" class="view-all">View All</a>
+
+        <div class="deals-carousel">
+            <div class="card">
+                <div class="badge">Engraving Available</div>
+                <img src="./assets/Rockerz_109.png" alt="boAt Airdopes 161" height="10px">
+                <div class="product-info">
+                    <div class="tag">40 Hours Playback</div>
+                    <h3>boAt Rockerz 109</h3>
+                    <p>₹899 <span class="original-price">₹2,490</span> <span class="discount">64% off</span></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="badge">Recently Restocked</div>
+                <img src="./assets/Airdopes_138.png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">60 Hours Playback</div>
+                    <h3>boAt Airdopes 138</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">New Launch</div>
+                <img src="./assets/AD_Ultra_Plus.png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">50 Hours Playback</div>
+                    <h3>boAt Airdopes Ultra Plus</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">Recently Restocked</div>
+                <img src="./assets/PB300.png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">10000mAh battery</div>
+                    <h3>boAt EnergyShroom PB300 Pro</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">Engraving Available</div>
+                <img src="./assets/Rockerz_238_Pro.png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">20 Hours Playback</div>
+                    <h3>boAt Rockerz 238 Pro</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">Recently Restocked</div>
+                <img src="./assets/Rockerz_195V2_Pro.png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">30 Hours Playback</div>
+                    <h3>boAt Rockerz 195V2 Pro</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+
+            
+        </div>
+
+        
+    </section>
+
+    <div class="abc">
+        <img src="./assets/Strip_Desktop1-1_1400x (1).png" alt="" height="150px" width="1250px" >
+    </div>
+
+
+    <section class="deals-section">
+        <h2>Top<span> TWS Offers</span></h2>
+
+        <a href="#" class="view-all">View All</a>
+
+        <div class="deals-carousel">
+            <div class="card">
+                <div class="badge">Engraving Available</div>
+                <img src="./assets/131_f04f74fd-45d4-4614-85cf-6ccf69c4cf90.png" alt="boAt Airdopes 161" height="10px">
+                <div class="product-info">
+                    <div class="tag">60 Hours Playback</div>
+                    <h3>boAt Airdopes 131</h3>
+                    <p>₹899 <span class="original-price">₹2,490</span> <span class="discount">64% off</span></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="badge">Recently Restocked</div>
+                <img src="./assets/boAt-Airdopes-181.png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">20 Hours Playback</div>
+                    <h3>boAt Airdopes 181</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">New Launch</div>
+                <img src="./assets/AD_161 (1).png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">40 Hours Playback</div>
+                    <h3>boAt Airdopes 161</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">Recently Restocked</div>
+                <img src="./assets/Airdopes-115_1.png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">Clear Calling</div>
+                    <h3>boAt Airdopes 115</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">Engraving Available</div>
+                <img src="./assets/AD_Alpha.png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">35 Hours Playback</div>
+                    <h3>boAt Airdopes Alpha</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">Recently Restocked</div>
+                <img src="./assets/280_lr.png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">Noise Cancellation</div>
+                    <h3>boAt Airdopes 280 ANC</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+
+            
+        </div>
+
+        
+    </section>
+
+    <div class="abc">
+        <img src="./assets/Strip_Desktop1-1_1400x (1).png" alt="" height="150px" width="1250px" >
+    </div>
+
+    <section class="deals-section">
+        <h2>Exclusive<span> Home Audio Steals</span></h2>
+
+        <a href="#" class="view-all">View All</a>
+
+        <div class="deals-carousel">
+            <div class="card">
+                <div class="badge">Engraving Available</div>
+                <img src="./assets/Stone_352.png" alt="boAt Airdopes 161" height="10px">
+                <div class="product-info">
+                    <div class="tag">12 Hours Playback</div>
+                    <h3>Stone 352</h3>
+                    <p>₹899 <span class="original-price">₹2,490</span> <span class="discount">64% off</span></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="badge">Recently Restocked</div>
+                <img src="./assets/Stone_180.png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">8 Hours Playback</div>
+                    <h3>boAt Stone 180</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">New Launch</div>
+                <img src="./assets/55ecd65f-a48e-45f6-930f-208684f9cfde_300x (1).png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">16W Stereo Sound</div>
+                    <h3>boAt Rugby</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">Recently Restocked</div>
+                <img src="./assets/2c9f9a3f-84d6-4470-a077-41994c6a26c9_300x (1).png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">5W Hd Sound</div>
+                    <h3>boAt Stone 170</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">Engraving Available</div>
+                <img src="./assets/ce5655c3-e83f-47ad-8f9f-6db17f896a1b_300x (1).png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">5 Hours Playback</div>
+                    <h3>Stone 260</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">Recently Restocked</div>
+                <img src="./assets/Stone_650_e2b01de6-260c-4807-b1a4-1375392188b1.png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">7 Hours Playback</div>
+                    <h3>boAt Stone 650</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+
+            
+        </div>
+
+        
+    </section>
+
+    <div class="abc">
+        <img src="./assets/Strip_Desktop1-1_1400x (1).png" alt="" height="150px" width="1250px" >
+    </div>
+
+
+
+    <section class="deals-section">
+        <h2>Smartwatches<span> At Best Prices</span></h2>
+
+        <a href="#" class="view-all">View All</a>
+
+        <div class="deals-carousel">
+            <div class="card">
+                <div class="badge">Engraving Available</div>
+                <img src="./assets/Artboard4_070497d5-41be-4fff-9d9e-3637ef11deea_300x.png" alt="boAt Airdopes 161" height="10px">
+                <div class="product-info">
+                    <div class="tag">BT Calling</div>
+                    <h3>boAt Storm Call</h3>
+                    <p>₹899 <span class="original-price">₹2,490</span> <span class="discount">64% off</span></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="badge">Recently Restocked</div>
+                <img src="./assets/4180.png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">BT Calling</div>
+                    <h3>boAt Wave Flex Connect</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">New Launch</div>
+                <img src="./assets/Wave_Beat_Call.png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">BT Calling</div>
+                    <h3>boAt Wave Call</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">Recently Restocked</div>
+                <img src="./assets/Storm_Call_3.png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">BT Calling</div>
+                    <h3>boAt Wave Electra</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">Engraving Available</div>
+                <img src="./assets/Wave_Fury.png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">BT Calling</div>
+                    <h3>boAt Wave Leap Call</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">Recently Restocked</div>
+                <img src="./assets/WaveSigma3_FIs_ActiveBlack01_300x.png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">BT Calling</div>
+                    <h3>boAt Wave Sigma 3</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+
+            
+        </div>
+
+        
+    </section>
+
+
+    <section class="deals-section">
+        <h2>Best<span> Deals on Accessories</span></h2>
+
+        <a href="#" class="view-all">View All</a>
+
+        <div class="deals-carousel">
+            <div class="card">
+                <div class="badge">Engraving Available</div>
+                <img src="./assets/PB400_628ae039-11be-4f0b-b723-651e2bb05de7 (1).png" alt="boAt Airdopes 161" height="10px">
+                <div class="product-info">
+                    <div class="tag">20000mAh Power Bank</div>
+                    <h3>boAt Energyshroom PB400</h3>
+                    <p>₹899 <span class="original-price">₹2,490</span> <span class="discount">64% off</span></p>
+                </div>
+            </div>
+ 
+            
+            <div class="card">
+                <div class="badge">Recently Restocked</div>
+                <img src="./assets/300_bLACK-min.png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">15W Wireless Charging</div>
+                    <h3>boAt EnergyShroom PB310 Wireless Pro</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">New Launch</div>
+                <img src="./assets/400_Green-min.png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">20000mAh Charging</div>
+                    <h3>boAt Energyshroom PB400 Pro</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">Recently Restocked</div>
+                <img src="./assets/2c9f9a3f-84d6-4470-a077-41994c6a26c9_300x (1).png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">10000mAh Charging</div>
+                    <h3>boAt EnergyShroom PB300 Air</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">Engraving Available</div>
+                <img src="./assets/300_Air.png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">10000mAh Power Bank</div>
+                    <h3>EnergyShroom PB300</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">Recently Restocked</div>
+                <img src="./assets/Magna_Charge_330_1.png" alt="boAt Airdopes 131 Pro Buds">
+                <div class="product-info">
+                    <div class="tag">15W Wireless Charging</div>
+                    <h3>boAt EnergyShroom PB330 Magnacharge</h3>
+                    <p>₹1,099 <span class="original-price">₹3,499</span> <span class="discount">80% off</span></p>
+                </div>
+            </div>
+
+            
+        </div>
+
+        
+    </section>
+    
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo-section">
+                <img src="./assets/boAt_logo_small_3067da8c-a83b-46dd-b28b-6ef1e16ccd17_small.png" alt="boAt logo" class="logo">
+                <p>Subscribe to our email alerts!</p>
+                <div class="email-subscription">
+                    <input type="email" placeholder="Enter your email address">
+                    <button>&#9654;</button>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#">True Wireless Earbuds</a></li>
+                        <li><a href="#">Wired Headphones</a></li>
+                        <li><a href="#">Home Audio</a></li>
+                        <li><a href="#">Smart Watches</a></li>
+                        <li><a href="#">Misfit Trimmers</a></li>
+                        <li><a href="#">Wireless Headphones</a></li>
+                        <li><a href="#">Wireless Speakers</a></li>
+                        <li><a href="#">Mobile Accessories</a></li>
+                        <li><a href="#">TRebel</a></li>
+                        <li><a href="#">Refer & Earn</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Track Your Order</a></li>
+                        <li><a href="#">Warranty & Support</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Service Centers</a></li>
+                        <li><a href="#">Bulk Orders</a></li>
+                        <li><a href="#">Why Buy Direct</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About boAt</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Read Our Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Social Responsibility</a></li>
+                        <li><a href="#">Warranty Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
